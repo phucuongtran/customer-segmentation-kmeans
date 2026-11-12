@@ -1,0 +1,91 @@
+# =========================================================================== #
+# 1. Tài liệu: mọi file Markdown và PDF, cả thư mục docs/                       #
+# =========================================================================== #
+*.md
+*.MD
+*.markdown
+*.pdf
+*.PDF
+docs/
+# Ngoại lệ: README ở gốc repo là trang giới thiệu trên GitHub
+!/README.md
+
+# =========================================================================== #
+# 2. Dữ liệu (dataset thô, kết quả trung gian, model đã train)                 #
+# =========================================================================== #
+data/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.zip
+
+# =========================================================================== #
+# 3. Thông tin cá nhân, bí mật và cấu hình riêng của máy                       #
+# =========================================================================== #
+# Biến môi trường, khoá API, mật khẩu
+.env
+.env.*
+*.env
+secrets/
+*.secret
+*.key
+*.pem
+credentials*.json
+token*.json
+
+# Cấu hình và bộ nhớ của trợ lý AI (có thể chứa ngữ cảnh cá nhân)
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+.cursor/
+.aider*
+.continue/
+
+# Ghi chú và file nháp cá nhân
+notes/
+personal/
+private/
+scratch/
+*.local
+*.local.*
+*_private.*
+*_personal.*
+
+# Cấu hình IDE
+.vscode/
+.idea/
+*.code-workspace
+*.sublime-*
+
+# File hệ điều hành
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# =========================================================================== #
+# 4. Môi trường Python và file sinh tự động                                    #
+# =========================================================================== #
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.python-version
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+*.log
+*.blg
+*.tmp
